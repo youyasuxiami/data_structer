@@ -1,4 +1,4 @@
-package com.xiami;
+package com.xiami.Queue;
 
 public class ArrayQueue{
     private int maxSize;//表示数组的最大容量
