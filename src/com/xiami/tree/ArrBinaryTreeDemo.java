@@ -51,5 +51,4 @@ class ArrBinaryTree {
             preOrder(2 * index + 2);
         }
     }
-
 }
