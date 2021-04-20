@@ -18,6 +18,9 @@ public class HeapSort {
         int arr[] = {4, 6, 8, 5, 9};
         heapSort(arr);
         System.out.println("排序后=" + Arrays.toString(arr));
+
+        System.out.println("测试速度");
+        testPeed();
     }
 
     //编写一个堆排序的方法
@@ -51,7 +54,25 @@ public class HeapSort {
         }
 
         //System.out.println("数组=" + Arrays.toString(arr));
+    }
 
+    public static void testPeed(){
+        int[] arr = new int[8000000];
+        for (int i = 0; i < 8000000; i++) {
+            arr[i] = (int) (Math.random() * 8000000); // 生成一个[0, 8000000) 数
+        }
+
+        System.out.println("排序前");
+        Date data1 = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String date1Str = simpleDateFormat.format(data1);
+        System.out.println("排序前的时间是=" + date1Str);
+
+        heapSort(arr);
+
+        Date data2 = new Date();
+        String date2Str = simpleDateFormat.format(data2);
+        System.out.println("排序前的时间是=" + date2Str);
     }
 
     //将一个数组(二叉树), 调整成一个大顶堆
