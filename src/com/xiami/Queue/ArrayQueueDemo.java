@@ -1,4 +1,4 @@
-package com.xiami;
+package com.xiami.Queue;
 
 import java.util.Scanner;
 
