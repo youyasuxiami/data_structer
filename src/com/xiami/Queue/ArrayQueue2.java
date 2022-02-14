@@ -1,12 +1,12 @@
 package com.xiami.Queue;
 
-public class ArrayQueue{
+public class ArrayQueue2{
     private int maxSize;//表示数组的最大容量
     private int front;//队列头
     private int rear;//队列尾
     private int[] arr;//存放数据，用于模拟队列
 
-    public ArrayQueue(int arrayMaxSize) {
+    public ArrayQueue2(int arrayMaxSize) {
         maxSize=arrayMaxSize;
         front = -1;
         rear = -1;
