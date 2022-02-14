@@ -24,7 +24,6 @@ public class SelectSort2 {
     public static void selectSort(int[] arr) {
         //在推导的过程，我们发现了规律，因此，可以使用for来解决
         //选择排序时间复杂度是 O(n^2)
-
         for (int i = 0; i < arr.length - 1; i++) {//n-1次轮
             int minIndex = i;
             int min = arr[i];//假定一个最小值，不是最小再重新确定
@@ -34,7 +33,6 @@ public class SelectSort2 {
                     minIndex = j; //重置minIndex
                 }
             }
-
             //将最小值，放在arr[0], 即交换
             if (minIndex != i) {//不等于当前位才去交换
                 arr[minIndex] = arr[i];
