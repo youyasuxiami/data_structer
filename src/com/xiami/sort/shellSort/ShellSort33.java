@@ -1,4 +1,4 @@
-package com.xiami.sort;
+package com.xiami.sort.shellSort;
 
 /**
  * Description：希尔排序，一步步推导

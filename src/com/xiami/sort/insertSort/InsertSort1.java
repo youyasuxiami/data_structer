@@ -1,4 +1,4 @@
-package com.xiami.sort;
+package com.xiami.sort.insertSort;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package com.xiami.sort;
+package com.xiami.sort.quickSort;
 
 /**
  * Description：快速排序：测试800w数据，比希尔快

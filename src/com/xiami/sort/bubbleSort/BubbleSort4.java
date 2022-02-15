@@ -1,36 +1,26 @@
-package com.xiami.sort;
+package com.xiami.sort.bubbleSort;
 
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
-import java.util.Date;
 
 /**
  * Description：冒泡排序，
- *  测试8w个数据的冒泡的速度
+ *  代码优化+将前面的冒泡排序算法，封装成一个方法
  *
  * @version v1.0.0
  * @author：zj
  * @date：2022­02­14 21:22
  */
-public class BubbleSort5 {
+public class BubbleSort4 {
     public static void main(String[] args) {
-        //创建一个8w数据的数组
-        int[] arr=new int[80000];
-        for (int i = 0; i < 80000; i++) {
-            arr[i]= (int) (Math.random()*8000000);//生成一个0-800w的随机数字
-        }
+        //int[] arr = {3, 9, -1, 10, -2};//看不出break的效果，换下面这个
+        int[] arr = {3, 9, -1, 10, 20};
 
-        Date data1 = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String date1Str = simpleDateFormat.format(data1);
-        System.out.println("排序前的时间是=" + date1Str);
-
-        //测试冒泡排序
+        System.out.println("排序前的数组");
+        System.out.println(Arrays.toString(arr));
+        //测试冒泡排序算法
         bubbleSort(arr);
-
-        Date data2 = new Date();
-        String date2Str = simpleDateFormat.format(data2);
-        System.out.println("排序后的时间是=" + date2Str);
+        System.out.println("排序后的数组");
+        System.out.println(Arrays.toString(arr));
     }
 
     /**
