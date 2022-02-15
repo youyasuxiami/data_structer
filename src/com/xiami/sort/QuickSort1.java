@@ -1,11 +1,9 @@
 package com.xiami.sort;
 
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
-import java.util.Date;
 
 /**
- * Description：
+ * Description：快速排序：这里是取中间的值作为中轴
  *
  * @version v1.0.0
  * @author：zj
