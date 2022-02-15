@@ -29,7 +29,7 @@ public class InsertSort1 {
 		int insertIndex = 1 - 1; //即arr[1]的前面这个数的下标
 		while(insertIndex >= 0 && insertVal < arr[insertIndex] ) {
 			arr[insertIndex + 1] = arr[insertIndex];// arr[insertIndex]
-			insertIndex--;
+			insertIndex--;//一开始要插入的数，换了位置还要和前面的元素进行比较，并换位
 		}
 		//当退出while循环时，说明插入的位置找到, insertIndex + 1
 		//举例：理解不了，我们一会 debug
