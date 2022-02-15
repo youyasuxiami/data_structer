@@ -1,7 +1,5 @@
 package com.xiami.sort;
 
-import java.util.Arrays;
-
 /**
  * Description：希尔排序，一步步推导
  * 方式二：移位式（希尔+插入排序）
@@ -13,8 +11,8 @@ import java.util.Arrays;
  */
 public class ShellSort33 {
     public static void main(String[] args) {
-        int[] arr = new int[80000];
-        for (int i = 0; i < 80000; i++) {
+        int[] arr = new int[8000000];
+        for (int i = 0; i < 8000000; i++) {
             arr[i] = (int) (Math.random() * 8000000); // 生成一个[0, 8000000) 数
         }
 
