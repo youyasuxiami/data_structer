@@ -33,11 +33,13 @@ public class InsertSort3 {
         //2. insertVal < arr[insertIndex] 待插入的数，还没有找到插入位置
         //3. 就需要将 arr[insertIndex] 后移
 
+        int insertVal = 0;
+        int insertIndex = 0;
         //定义待插入的数，给第二个数找位置
         for (int i = 1; i < arr.length; i++) {
-            int insertVal = arr[i];
+             insertVal = arr[i];
             //定义待插入的数的索引
-            int insertIndex = i - 1; //即arr[1]的前面这个数的下标
+             insertIndex = i - 1; //即arr[1]的前面这个数的下标
             while (insertIndex >= 0 && insertVal < arr[insertIndex]) {
                 arr[insertIndex + 1] = arr[insertIndex];// arr[insertIndex]
                 insertIndex--;
